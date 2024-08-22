@@ -1,0 +1,46 @@
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  char op;
+  float num1, num2;
+
+  cout << "Enter operator to perform operation:+,-,* /"<<endl;
+  
+  
+  cin >> op;
+
+  cout << "Enter the first number: ";
+  cin >> num1 ;
+  cout<<"Enter the second number: ";
+  cin >> num2 ;
+
+  switch(op) {
+
+    case '+':
+      cout << "THE SUM IS:"<<num1+num2;
+      break;
+
+    case '-':
+      cout <<"THE SUBSTRACTION IS:"<< num1 - num2;
+      break;
+
+    case '*':
+      cout <<" THE MULTIPLICATION IS:"<< num1 * num2;
+      break;
+
+    case '/':
+      cout <<"THE DIVISION IS: "<< num1 / num2;
+      break;
+
+    default:
+      cout << "Error! Enter the correct opertor from given ";
+      break;
+  }
+
+  return 0;
+}
